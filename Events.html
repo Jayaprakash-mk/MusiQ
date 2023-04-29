@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="explore music">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <title>AtoZ MusiQ</title>
+        <link rel="stylesheet" type="text/css" href="\design\main.css">
+    </head>
+    <body>
+        <script src="activities\header.js"></script>
+        
+
+
+        <section class="header" id="header">
+            <div class="top-title">
+                AtoZ  MusiQ
+            </div>
+            <div class="navigation">
+                <div class="navigator left" id="nav-left">
+                    <ul class="menu-options">
+                        <li><a href="index.html"  class="list-link current" data-replace="Home"><span>Home</span></a></li>
+                        <li><a href="Artist.html"  class="list-link" data-replace="Artist"><span>Artist</span></a></li>
+                        <li><a href="Events.html"  class="list-link" data-replace="Events"><span>Events</span></a></li>
+                        <li><a href="#contact-section"  class="list-link" data-replace="contact"><span>contact</span></a></li>
+                    </ul>
+                </div>
+                <div class="right-navigation" id="right-navigation">
+                    <ul class="sign-options">
+                        <li>
+                            <button  class="btn" id="theme-toogle-btn" onclick="ThemeChange()">
+                                <span class="material-icons sun-icon sign">light_mode</span>
+                                <span class="material-icons moon-icon sign">dark_mode</span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#contact-section", class="sign"><span>Subscribe</span></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="Events-section">
+            <div class="Events-container">
+                <div class="Head-Banner">
+                    <h2 class="Head-Banner-name">
+                        <span>MUSIC EVENTS</span>
+                    </h2>
+                </div>
+                <div class="Events-content-holder">
+                    <ul class="Events-list">
+                        <li class="music-event-content event-1">
+                            <div class="event-content-area">
+                                <div class="event-img-category">
+                                    <img class="event-image" src="img\events\event-1.webp" alt="event-1">
+                                    <span class="event-category">Music Concert</span>
+                                </div>
+                                <div class="event-all-details">
+                                    <div class="event-name-headline">
+                                        <span class="event-heading">Pradeep Kumar’s Mayanadhi Live in concert, Pondicherry</span>
+                                    </div>
+                                    <span class="event-date-time">April 1  |  6PM</span>
+                                    <span class="event-venue">Helipad Ground, Puducherry</span>
+                                    <div class="event-price">
+                                        Rs.499 Onwards
+                                    </div>
+                                </div>
+                                <div class="event-invitation">
+                                    <span class="material-icons edit icon">edit</span>
+                                    <span class="invitation-line">Note on calender to enjoy this event</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="music-event-content event-2">
+                            <div class="event-content-area">
+                                <div class="event-img-category">
+                                    <img class="event-image" src="img\events\event-2.webp" alt="event-1">
+                                    <span class="event-category">Music</span>
+                                </div>
+                                <div class="event-all-details">
+                                    <div class="event-name-headline">
+                                        <span class="event-heading">Shweta Mohan Live Music in Chennai </span>
+                                    </div>
+                                    <span class="event-date-time">April 14  |  6PM</span>
+                                    <span class="event-venue">Phoenix Markcity, Chennai</span>
+                                    <div class="event-price">
+                                        Rs.599 Onwards
+                                    </div>
+                                </div>
+                                <div class="event-invitation">
+                                    <span class="material-icons edit icon">edit</span>
+                                    <span class="invitation-line">Note on calender to enjoy this event</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="music-event-content event-3">
+                            <div class="event-content-area">
+                                <div class="event-img-category">
+                                    <img class="event-image" src="img\events\event-3.webp" alt="event-1">
+                                    <span class="event-category">Music</span>
+                                </div>
+                                <div class="event-all-details">
+                                    <div class="event-name-headline">
+                                        <span class="event-heading">The Eagle is coming | Anirudh's Once Upon a Time Tour</span>
+                                    </div>
+                                    <span class="event-date-time">June 24 |  4PM</span>
+                                    <span class="event-venue">Adlux International Convention Center</span>
+                                    <div class="event-price">
+                                        Rs.499 Onwards
+                                    </div>
+                                </div>
+                                <div class="event-invitation">
+                                    <span class="material-icons edit icon">edit</span>
+                                    <span class="invitation-line">Note on calender to enjoy this event</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="music-event-content event-4">
+                            <div class="event-content-area">
+                                <div class="event-img-category">
+                                    <img class="event-image" src="img\events\event-4.webp" alt="event-1">
+                                    <span class="event-category">Music Concert</span>
+                                </div>
+                                <div class="event-all-details">
+                                    <div class="event-name-headline">
+                                        <span class="event-heading">GV PRAKASH KUMAR AAYIRATHIL ORUVAN | Live in Concert at Kovai</span>
+                                    </div>
+                                    <span class="event-date-time">May 27  |  6:30PM</span>
+                                    <span class="event-venue">Codissia Ground, Kovai</span>
+                                    <div class="event-price">
+                                        Rs.299 Onwards
+                                    </div>
+                                </div>
+                                <div class="event-invitation">
+                                    <span class="material-icons edit icon">edit</span>
+                                    <span class="invitation-line">Note on calender to enjoy this event</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="music-event-content event-5">
+                            <div class="event-content-area">
+                                <div class="event-img-category">
+                                    <img class="event-image" src="img\events\event-5.webp" alt="event-1">
+                                    <span class="event-category">Music Concert</span>
+                                </div>
+                                <div class="event-all-details">
+                                    <div class="event-name-headline">
+                                        <span class="event-heading">Maalavika Sundar's- Pink Moon Boat Concert</span>
+                                    </div>
+                                    <span class="event-date-time">April 5 |  6PM</span>
+                                    <span class="event-venue">Muttukadu Boat House, Chennai</span>
+                                    <div class="event-price">
+                                        Rs.800 Onwards
+                                    </div>
+                                </div>
+                                <div class="event-invitation">
+                                    <span class="material-icons edit icon">edit</span>
+                                    <span class="invitation-line">Note on calender to enjoy this event</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="music-event-content event-6">
+                            <div class="event-content-area">
+                                <div class="event-img-category">
+                                    <img class="event-image" src="img\events\event-6.webp" alt="event-1">
+                                    <span class="event-category">Music</span>
+                                </div>
+                                <div class="event-all-details">
+                                    <div class="event-name-headline">
+                                        <span class="event-heading">Masala Coffee - Live In Concert At Chennai</span>
+                                    </div>
+                                    <span class="event-date-time">April 16 |  6PM</span>
+                                    <span class="event-venue">Courtyard Phoenix MarketCity Chennai</span>
+                                    <div class="event-price">
+                                        Rs.354 Onwards
+                                    </div>
+                                </div>
+                                <div class="event-invitation">
+                                    <span class="material-icons edit icon">edit</span>
+                                    <span class="invitation-line">Note on calender to enjoy this event</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="music-event-content event-7">
+                            <div class="event-content-area">
+                                <div class="event-img-category">
+                                    <img class="event-image" src="img\events\event-9.jpg" alt="event-1">
+                                    <span class="event-category">Music</span>
+                                </div>
+                                <div class="event-all-details">
+                                    <div class="event-name-headline">
+                                        <span class="event-heading">Maestro Ilaiyaraaja Live in Concert | Tiruppur</span>
+                                    </div>
+                                    <span class="event-date-time">April 23 |  7PM</span>
+                                    <span class="event-venue">AVP PLAY GROUND, Tirupur</span>
+                                    <div class="event-price">
+                                        Rs.480 Onwards
+                                    </div>
+                                </div>
+                                <div class="event-invitation">
+                                    <span class="material-icons edit icon">edit</span>
+                                    <span class="invitation-line">Note on calender to enjoy this event</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="music-event-content event-8">
+                            <div class="event-content-area">
+                                <div class="event-img-category">
+                                    <img class="event-image" src="img\events\event-7.webp" alt="event-1">
+                                    <span class="event-category">Music Concert</span>
+                                </div>
+                                <div class="event-all-details">
+                                    <div class="event-name-headline">
+                                        <span class="event-heading">Thaikkudam Bridge Live Performance in CIT Culturals - Takshashila</span>
+                                    </div>
+                                    <span class="event-date-time">March 31 |  6PM</span>
+                                    <span class="event-venue">CIT ground, Kundrathur, Chennai</span>
+                                    <div class="event-price">
+                                        Rs.350 Onwards
+                                    </div>
+                                </div>
+                                <div class="event-invitation">
+                                    <span class="material-icons edit icon">edit</span>
+                                    <span class="invitation-line">Note on calender to enjoy this event</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="music-event-content event-9">
+                            <div class="event-content-area">
+                                <div class="event-img-category">
+                                    <img class="event-image" src="img\events\event-8.jpeg" alt="event-1">
+                                    <span class="event-category">Music</span>
+                                </div>
+                                <div class="event-all-details">
+                                    <div class="event-name-headline">
+                                        <span class="event-heading">Musical Night by Vijay Starts Live Performance in CIT Culturals - Takshashila</span>
+                                    </div>
+                                    <span class="event-date-time">April 1 |  6PM</span>
+                                    <span class="event-venue">CIT ground, Kundrathur, Chennai</span>
+                                    <div class="event-price">
+                                        Rs.150 Onwards
+                                    </div>
+                                </div>
+                                <div class="event-invitation">
+                                    <span class="material-icons edit icon">edit</span>
+                                    <span class="invitation-line">Note on calender to enjoy this event</span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer" id="contact-section">
+            <div class="contact">
+                <div class="contact-content">
+                    <div class="subscribe-div">
+                        <p class="info">WANT TO GET MORE ON MUSIC?</p>
+                        <p class="info">SUSCRIBE TO AtoZ MusiQ</p>
+                        <form class="subscription">
+                            <input class="init-content" type="email" , placeholder="Enter valid email address" value>
+                            <button class="sub-btn" onclick="innerHTML = 'Subscribed'">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="blog-info">
+                        <div class="page-links">
+                            <h3>AtoZ  MusiQ</h3>
+                            <ul class="site-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Artist.html">Artist</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#contact-section">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="personal-info">
+                            <h3>Contact:</h3>
+                            <p class="title">Email:</p>
+                            <p class="value">mk.jayaprakash.maniraj@gmail.com</p>
+                            <br>
+                            <p class="title">Phone:</p>
+                            <p class="value">+91 9486348285</p>
+                            <div class="social-media">
+                                <a href="https://www.linkedin.com/in/jayaprakash-m-k/"><img src="social-media\linkedin.png" alt="Linkedin" target="blank"></a>
+                                <a href="https://github.com/Jayaprakash-mk"><img src="social-media\github.png" alt="Github" target="blank"></a>
+                                <a href="https://instagram.com/_jaya.prakash_?igshid=YmMyMTA2M2Y="><img src="social-media\instagram.png" alt="Instagram" target="blank"></a>
+                                <a href="https://twitter.com/Jayaprakash_mk_?t=jEcODX2cP48y3K7_TVppEQ&s=09"><img src="social-media\twitter.png" alt="Twitter" target="blank"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

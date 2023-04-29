@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="explore music">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="#">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <title>AtoZ MusiQ</title>
+        <link rel="stylesheet" type="text/css" href="\design\main.css">
+    </head>
+    <body>
+        <script src="activities\header.js"></script>
+        
+
+
+        <section class="header" id="header">
+            <div class="top-title">
+                AtoZ  MusiQ
+            </div>
+            <div class="navigation">
+                <div class="navigator left" id="nav-left">
+                    <ul class="menu-options">
+                        <li><a href="index.html"  class="list-link current" data-replace="Home"><span>Home</span></a></li>
+                        <li><a href="Artist.html"  class="list-link" data-replace="Artist"><span>Artist</span></a></li>
+                        <li><a href="Events.html"  class="list-link" data-replace="Events"><span>Events</span></a></li>
+                        <li><a href="#contact-section"  class="list-link" data-replace="contact"><span>contact</span></a></li>
+                    </ul>
+                </div>
+                <div class="right-navigation" id="right-navigation">
+                    <ul class="sign-options">
+                        <li>
+                            <button  class="btn" id="theme-toogle-btn" onclick="ThemeChange()">
+                                <span class="material-icons sun-icon sign">light_mode</span>
+                                <span class="material-icons moon-icon sign">dark_mode</span>
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#contact-section", class="sign"><span>subscribe</span></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="Artists-section">
+            
+            <div class="Artists-container">
+                <div class="Head-Banner">
+                    <h2 class="Head-Banner-name">
+                        <span>ARTISTS</span>
+                    </h2>
+                </div>
+                <div class="featured-Artist-container">
+                    
+                    <div class="Artist-songs-playlist Artist-1">
+                        <h2 class="Artist-name">G.V.Prakash</h2>
+                        <div class="Artist-playlist">
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-1 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\gv_songs\madharaasi.jpeg" alt="G.V.Prakash">
+                                    </div>
+                                    <div class="flip-card-back back" >
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3 class="Song-title-name">Pookkal Pookkum</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    Andrea Jeremiah, G. V. Prakash, Harini
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause1('Pookkal Pookkum')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-2 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\gv_songs\Adukallam.jpeg" alt="G.V.Prakash">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3 class="song-title-name">Yathe Yathe</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    G. V. Prakash
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause1('Yathe Yathe')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" min="0" max="100" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-3 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\gv_songs\vaathi.jpeg" alt="G.V.Prakash">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>Vaa Vaathi</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    G. V. Prakash, Shweta Mohan
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause1('Vaa Vaathi')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" min="0" max="100" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-4 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\gv_songs\AO2.jpeg" alt="G.V.Prakash">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>Un Mela Aasadhaan</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    Andrea Jeremiah, Dhanush, G. V. Prakash
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause1('Un Mela Aasadhaan')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" min="0" max="100" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                    
+
+                    <div class="Artist-songs-playlist Artist-2">
+                        <h2 class="Artist-name"><span>Shawn Mendes</span></h2>
+                        <div class="Artist-playlist">
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-1 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\shawn mendes\All-in-u.jpeg" alt="Shawn Mendes">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>Fallin' All In You</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    Shawn Mendes
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause2('Fallin All In You')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range"value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-2 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\shawn mendes\heart-beat.jpeg" alt="Shawn Mendes">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>Heartbeat</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                   Shawn Mendes, Amy Allen
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause2('Heartbeat')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-3 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\shawn mendes\nothing-holding.jpeg" alt="Shawn Mendes">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>There's Nothing Holdin' Me Back</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    Shawn Mendes
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause2('Nothing Holdin Me Back')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-4 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\shawn mendes\where-u-gone.jpeg" alt="Shawn Mendes">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>Where You're Gone</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    Shawn Mendes
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause2('Where You re Gone')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" min="0" max="100" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+
+
+                    <div class="Artist-songs-playlist Artist-3">
+                        <h2 class="Artist-name"><span>Yuvan Shankar Raja</span></h2>
+                        <div class="Artist-playlist">
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-1 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\YSR\pudhupettai.jpeg" alt="Yuvan Shankar Raja">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>Oru Naalil</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    Yuvan Shankar Raja
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause3('Oru Naalil')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-2 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\YSR\paiyaa.jpeg" alt="Yuvan Shankar Raja">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>En Kadhal Solla</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    Tanvi Shah, Yuvan Shankar Raja
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause3('En Kadhal Solla')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-3 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\YSR\master.jpeg" alt="Yuvan Shankar Raja">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>Andha Kanna Paathaakaa</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    Anirudh Ravichander, Yuvan Shankar Raja
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause3('Andha Kanna Paathaakaa')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-4 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\YSR\pyaar.jpeg" alt="Yuvan Shankar Raja">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>High On Love</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    Sid Sriram, Yuvan Shankar Raja
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause3('High On Love')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="Artist-songs-playlist Artist-4">
+                        <h2 class="Artist-name"><span>Jonita Gandhi</span></h2>
+                        <div class="Artist-playlist">
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-1 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\jonita\ok-kanmani.jpeg" alt="Jonita Gandhi">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>Mental Manadhil</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    A.R. Rahman, Jonita Gandhi
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause4('Mental Manadhil')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-2 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\jonita\beast.jpeg" alt="Jonita Gandhi">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>Arabic Kuthu - 
+                                                    Halamithi Habibo
+                                                </h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    Anirudh Ravichander, Jonita Gandhi
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause4('Arabic Kuthu')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-3 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\jonita\kaatru-veliyidai.jpeg" alt="Jonita Gandhi">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>Azhagiye</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    A.R. Rahman, Arjun Chandy, Haricharan, Jonita Gandhi
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause4('Azhagiye')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flip-card">
+                                <div class="Artists-song song-4 flip-card-inner">
+                                    <div class="flip-card-front front">
+                                        <img class="Song-poster" src="img\jonita\circus.jpeg" alt="Jonita Gandhi">
+                                    </div>
+                                    <div class="flip-card-back back">
+                                        <div class="song-details">
+                                            <div class="song-name">
+                                                <h3>Current Laga Re</h3>
+                                            </div>
+                                            <div class="singers-name">
+                                                <h4>Performed by</h4>
+                                                <p>
+                                                    Nakash, Dhvani, Jonita Gandhi, Lijo 
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="play-button">
+                                            <button  class="song-btn" id="play-pause-button" onclick="playPause4('Current Laga Re')">
+                                                <i class="fas fa-play-circle  play-icon play"></i>
+                                            </button>
+                                            <div class="slider-bar-container">
+                                                <div class="current-time">00:00</div>
+                                                <input type="range" value="0" class="seek-slider">
+                                                <div class="Total-duration">00:00</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="footer" id="contact-section">
+            <div class="contact">
+                <div class="contact-content">
+                    <div class="subscribe-div">
+                        <p class="info">WANT TO GET MORE ON MUSIC?</p>
+                        <p class="info">SUSCRIBE TO AtoZ MusiQ</p>
+                        <form class="subscription">
+                            <input class="init-content" type="email" , placeholder="Enter valid email address" value>
+                            <button class="sub-btn" onclick="innerHTML = 'Subscribed'">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="blog-info">
+                        <div class="page-links">
+                            <h3>AtoZ  MusiQ</h3>
+                            <ul class="site-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">Artist</a></li>
+                                <li><a href="Events.html">Events</a></li>
+                                <li><a href="#contact-section">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="personal-info">
+                            <h3>Contact:</h3>
+                            <p class="title">Email:</p>
+                            <p class="value">mk.jayaprakash.maniraj@gmail.com</p>
+                            <br>
+                            <p class="title">Phone:</p>
+                            <p class="value">+91 9486348285</p>
+                            <div class="social-media">
+                                <a href="https://www.linkedin.com/in/jayaprakash-m-k/"><img src="social-media\linkedin.png" alt="Linkedin" target="blank"></a>
+                                <a href="https://github.com/Jayaprakash-mk"><img src="social-media\github.png" alt="Github" target="blank"></a>
+                                <a href="https://instagram.com/_jaya.prakash_?igshid=YmMyMTA2M2Y="><img src="social-media\instagram.png" alt="Instagram" target="blank"></a>
+                                <a href="https://twitter.com/Jayaprakash_mk_?t=jEcODX2cP48y3K7_TVppEQ&s=09"><img src="social-media\twitter.png" alt="Twitter" target="blank"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="activities\artist.js"></script>
+    </body>
+</html>
